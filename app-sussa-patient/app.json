@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "AppSussaPatient",
+    "slug": "AppSussaPatient",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3cf1863b-2a2f-4619-82ef-97e5062b4e54"
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permissão para Fotos."
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.sussaHeader {
+  @include flexCenter(column);
+  position: absolute;
+  width: 90%;
+  margin: 3rem auto;
+  left: 0;
+  right: 0;
+
+  @media (min-width: $desktopSize) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5% 4%;
+    left: 0;
+    top: 0;
+  }
+
+  img {
+    width: 30rem;
+  }
+
+  .textBlack {
+    color: $black;
+  }
+
+  .textWhite {
+    color: $white;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+    @media (min-width: 360px) {
+      width: 80%;
+    }
+
+    @media (min-width: 700px) {
+      width: 60%;
+    }
+
+    @media (min-width: $desktopSize) {
+      justify-content: flex-end;
+      width: 50%;
+    }
+
+    .headerNavItem {
+      font-size: 2rem;
+      cursor: pointer;
+      user-select: none;
+      // border-bottom: 2px none $red;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: solid;
+      border-color: rgba(0,0,0,0);
+      border-width: 2px;
+      margin: 1rem 2rem;
+      transition: all .2s ease-in;
+
+      @media (min-width: $desktopSize) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
+      svg {
+        fill: $white;
+        height: 2.4rem;
+      }
+
+      &:hover {
+        // text-decoration: underline;
+        border-bottom: 2px solid $red;
+      }
+    }
+    .headerNavItemActive {
+      border-bottom: 2px solid $red;
+    }
+  }
+}

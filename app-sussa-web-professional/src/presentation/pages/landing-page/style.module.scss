@@ -1,0 +1,315 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.hero {
+  background: #fff;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: $black;
+
+  // @media (min-width: $desktopSize) {
+  //   background-image: url('../../public/images/hero.png');
+  // }
+
+  .lottieContainer {
+    margin-top: 18rem;
+    display: none;  
+    @media (min-width: $desktopSize) {
+      display: flex;
+    }
+  }
+
+  .align {
+    visibility: hidden;
+  }
+
+  .content {
+    width: 60%;
+    // margin-left: auto;
+    // margin-right: auto;
+    // background: red;
+    margin-top: 18rem;
+    
+    h1 {
+      font-size: 3.2rem;
+    }
+  
+    p {
+      margin-top: 1.2rem;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+
+      @media (min-width: 700px) {
+        width: 70%;
+      }
+
+      @media (min-width: $desktopSize) {
+        width: 50%;
+      }
+    }
+
+    .btnHero {
+      @include buttonBasicStyle();
+
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+
+      &#contact {
+        color: $white;
+        background-color: #8F95FF;
+        
+        &:hover {
+          opacity: .9;
+        }
+      }
+
+      &#resume {
+        color: $white;
+        background-color: #FF9E9C;
+
+        &:hover {
+          opacity: .9;
+        }
+      }
+    }
+
+  }
+}
+
+.social {
+  @include flexCenter(column);
+  background-color: $yellow;
+  padding: 3rem 0;
+  width: 100vw;
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .socialContent {
+    @include flexCenter();
+    margin-top: 2rem;
+
+    .socialItem {
+      @include flexCenter(column);
+      margin-left: 2rem;
+      margin-right: 2rem;
+  
+      svg {
+        width: 3.2rem;
+      }
+  
+      a {
+        font-size: 2.4rem;
+        color: $blueDark;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.portfolio {
+  @include flexCenter(column);
+  @include sectionBasicStyle();
+  padding: 4rem 0;
+  width: 100vw;
+
+  .project {
+    @include flexCenter(column);
+    padding: 0 2rem;
+    margin: 5rem 0;
+    
+    img {
+      width: 20rem;
+      margin: 0 auto;
+
+      @media (min-width: $desktopSize) {
+        margin: 0 0;
+      }
+    }
+
+    @media (min-width: $desktopSize) {
+      flex-direction: row;
+      width: 50%;
+      margin: 5rem auto;
+    }
+
+    .projectContent {
+      @include flexCenter(column);
+      margin: 0 auto;
+      padding: 1rem 2rem;
+
+      @media (min-width: 600px) {
+        width: 70%;
+      }
+
+      @media (min-width: 800px) {
+        width: 50%;
+      }
+
+      @media (min-width: $desktopSize) {
+        align-items: flex-start;
+        margin: 0 0;
+        margin-left: 2rem;
+      }
+
+      h1 {
+        font-size: 3.2rem;
+        margin-top: 2rem;
+      }
+  
+      p {
+        margin-top: 2rem;
+        font-size: 2rem;
+
+        @media (min-width: $desktopSize) {
+          width: 100%;
+        }
+
+        b {
+          color: $blue;
+        }
+  
+        a.nlw {
+          color: $blue;
+          text-decoration: underline;
+        }
+      }
+  
+      .projectButtons {
+        a.btnProject {
+          @include buttonBasicStyle();
+    
+          color: $black;
+          background-color: $yellow;
+          
+          &:hover {
+            opacity: .9;
+          }
+    
+          svg {
+            width: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.education {
+  @include flexCenter(column);
+  @include sectionBasicStyle();
+  padding: 4rem 0;
+  width: 100vw;
+
+  .schools {
+    display: flex;
+    flex-direction: column;
+
+    .school {
+      display: flex;
+      flex-direction: column;
+      margin: 4rem 0;
+      padding: 1rem 2rem;
+
+      img {
+        width: 18rem;
+        margin: 0 auto;
+      }
+
+      .schoolInfo {
+        .schoolName {
+          margin-top: 2rem;
+          font-size: 2.4rem;
+        }
+    
+        .course {
+          font-weight: 500;
+          font-size: 2.2rem;
+        }
+    
+        .duration {
+          font-weight: 500;
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  @include flexCenter(column);
+  @include sectionBasicStyle();
+  padding: 6rem 0;
+  width: 100vw;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    
+    textarea,
+    input {
+      margin: .5rem 0;
+      padding: 2rem 2rem;
+      width: 22rem;
+      height: 2rem;
+      border-radius: 8px;
+
+      font-size: 2rem;
+
+      @media (min-width: 300px) {
+        width: 25rem;
+      }
+
+      @media (min-width: 400px) {
+        width: 30rem;
+      }
+
+      @media (min-width: 600px) {
+        width: 40rem;
+      }
+    }
+
+    textarea {
+      height: 10rem;
+    }
+
+    .contactFormButton {
+      @include buttonBasicStyle();
+      background-color: $black;
+      color: $white;
+      cursor: pointer;
+      border: solid;
+      border-color: $black;
+      border-width: 3px;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+
+    address {
+      font-style: normal;
+      font-size: 2rem;
+      
+      a {
+        color: $blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}

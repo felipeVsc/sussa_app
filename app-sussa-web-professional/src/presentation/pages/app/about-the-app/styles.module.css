@@ -1,0 +1,46 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.content .header {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 10rem;
+}
+.content .header .headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content .header .headerLeft .profilePhoto {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .header .headerLeft .headerTextContent {
+  margin-left: 1.6rem;
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content .header .headerLeft .headerTextContent .studentName {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.content .header .headerLeft .headerTextContent .course {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #E6C28C;
+  margin-bottom: 0.5rem;
+}
+.content .header .headerRight {
+  margin-right: 2.4rem;
+}/*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,44 @@
+@import '../../../../assets/styles/mixins';
+@import '../../../../assets/styles/variables';
+
+.signInContainer {
+  display: flex; 
+  width: 100vw;
+  height: 100vh;
+
+  .contentContainer {
+    width: 50%;
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .inputsContainer {
+      @include flexCenter(column);
+      background-color: $backgroundColor;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 8px;
+      border-color: #FBEAFF;
+      padding: 1.6rem ;
+    }
+
+    .signUpText {
+      font-size: 1.6rem;
+      margin-top: 2.4rem;
+      font-weight: 400;
+
+      .linkText {
+        color: $chatMessage;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .bannerContainer {
+    background-image: url(../../../../assets/images/auth-banner.jpg);
+    width: 50%;
+    background-color: blue;
+  }
+}

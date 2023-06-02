@@ -1,0 +1,39 @@
+.signInContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.signInContainer .contentContainer {
+  width: 50%;
+  background-color: #FAF9FE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signInContainer .contentContainer .inputsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAF9FE;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  border-color: #FBEAFF;
+  padding: 1.6rem;
+}
+.signInContainer .contentContainer .signUpText {
+  font-size: 1.6rem;
+  margin-top: 2.4rem;
+  font-weight: 400;
+}
+.signInContainer .contentContainer .signUpText .linkText {
+  color: #9279FE;
+  font-weight: 700;
+}
+.signInContainer .bannerContainer {
+  background-image: url(../../../../assets/images/auth-banner.jpg);
+  width: 50%;
+  background-color: blue;
+}/*# sourceMappingURL=styles.module.css.map */

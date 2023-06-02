@@ -1,0 +1,69 @@
+@import '../../../../assets/styles/mixins';
+@import '../../../../assets/styles/variables';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .header {
+    margin-top: 1.6rem;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    max-height: 10rem;
+
+    .headerLeft {
+      display: flex; 
+      align-items: center;
+      justify-content: flex-start;
+
+      .profilePhoto {
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+      
+      .headerTextContent {
+        margin-left: 1.6rem;
+        margin-top: 1.2rem;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        .studentName {
+          font-weight: 700;
+          font-size: 2.4rem;
+          margin-top: 0;
+          margin-bottom: 1rem;
+        }
+        .course {
+          font-weight: 400; 
+          font-size: 1.6rem;
+          color: $orange;
+          margin-bottom: .5rem;
+        }
+      }
+    }
+  
+    .headerRight {
+      margin-right: 2.4rem;
+    }
+  }
+  
+  .chatContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20rem;
+    height: 80%;
+    .chat {
+      display: flex;
+      flex-direction: column-reverse;
+      // justify-content: flex-end;
+      height: 80%;      
+      overflow-y: scroll;
+    }
+  }
+}
+

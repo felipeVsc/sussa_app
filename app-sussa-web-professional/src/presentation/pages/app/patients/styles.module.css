@@ -1,0 +1,12 @@
+.dashboardContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3rem;
+ 
+}
+.dashboardContent .professionalName {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+}/*# sourceMappingURL=styles.module.css.map */

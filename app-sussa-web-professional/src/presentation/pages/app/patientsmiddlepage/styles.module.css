@@ -1,0 +1,29 @@
+.dashboardContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3rem;
+ 
+}
+.dashboardContent .professionalName {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.content .header {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 10rem;
+}
+.content .header .headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}/*# sourceMappingURL=styles.module.css.map */

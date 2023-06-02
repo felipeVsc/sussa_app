@@ -1,0 +1,355 @@
+.hero {
+  background: #fff;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: #000;
+}
+.hero .lottieContainer {
+  margin-top: 18rem;
+  display: none;
+}
+@media (min-width: 1000px) {
+  .hero .lottieContainer {
+    display: flex;
+  }
+}
+.hero .align {
+  visibility: hidden;
+}
+.hero .content {
+  width: 60%;
+  margin-top: 18rem;
+}
+.hero .content h1 {
+  font-size: 3.2rem;
+}
+.hero .content p {
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+@media (min-width: 700px) {
+  .hero .content p {
+    width: 70%;
+  }
+}
+@media (min-width: 1000px) {
+  .hero .content p {
+    width: 50%;
+  }
+}
+.hero .content .btnHero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  font-size: 2rem;
+  padding: 1.2rem 1.6rem;
+  margin: 1.2rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.hero .content .btnHero svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.hero .content .btnHero#contact {
+  color: #FFF;
+  background-color: #8F95FF;
+}
+.hero .content .btnHero#contact:hover {
+  opacity: 0.9;
+}
+.hero .content .btnHero#resume {
+  color: #FFF;
+  background-color: #FF9E9C;
+}
+.hero .content .btnHero#resume:hover {
+  opacity: 0.9;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E7F067;
+  padding: 3rem 0;
+  width: 100vw;
+}
+.social h1 {
+  font-size: 3.2rem;
+}
+.social .socialContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.social .socialContent .socialItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.social .socialContent .socialItem svg {
+  width: 3.2rem;
+}
+.social .socialContent .socialItem a {
+  font-size: 2.4rem;
+  color: #353563;
+  text-decoration: underline;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  padding: 4rem 0;
+  width: 100vw;
+}
+.portfolio h1 {
+  font-size: 3.2rem;
+}
+.portfolio hr {
+  margin-top: 2rem;
+  width: 15rem;
+  height: 0.3rem;
+  background-color: #A9B04C;
+}
+.portfolio .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 5rem 0;
+}
+.portfolio .project img {
+  width: 20rem;
+  margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  .portfolio .project img {
+    margin: 0 0;
+  }
+}
+@media (min-width: 1000px) {
+  .portfolio .project {
+    flex-direction: row;
+    width: 50%;
+    margin: 5rem auto;
+  }
+}
+.portfolio .project .projectContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+@media (min-width: 600px) {
+  .portfolio .project .projectContent {
+    width: 70%;
+  }
+}
+@media (min-width: 800px) {
+  .portfolio .project .projectContent {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .portfolio .project .projectContent {
+    align-items: flex-start;
+    margin: 0 0;
+    margin-left: 2rem;
+  }
+}
+.portfolio .project .projectContent h1 {
+  font-size: 3.2rem;
+  margin-top: 2rem;
+}
+.portfolio .project .projectContent p {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+@media (min-width: 1000px) {
+  .portfolio .project .projectContent p {
+    width: 100%;
+  }
+}
+.portfolio .project .projectContent p b {
+  color: #5657A3;
+}
+.portfolio .project .projectContent p a.nlw {
+  color: #5657A3;
+  text-decoration: underline;
+}
+.portfolio .project .projectContent .projectButtons a.btnProject {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  font-size: 2rem;
+  padding: 1.2rem 1.6rem;
+  margin: 1.2rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  color: #000;
+  background-color: #E7F067;
+}
+.portfolio .project .projectContent .projectButtons a.btnProject:hover {
+  opacity: 0.9;
+}
+.portfolio .project .projectContent .projectButtons a.btnProject svg {
+  width: 2.4rem;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  padding: 4rem 0;
+  width: 100vw;
+}
+.education h1 {
+  font-size: 3.2rem;
+}
+.education hr {
+  margin-top: 2rem;
+  width: 15rem;
+  height: 0.3rem;
+  background-color: #A9B04C;
+}
+.education .schools {
+  display: flex;
+  flex-direction: column;
+}
+.education .schools .school {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+  padding: 1rem 2rem;
+}
+.education .schools .school img {
+  width: 18rem;
+  margin: 0 auto;
+}
+.education .schools .school .schoolInfo .schoolName {
+  margin-top: 2rem;
+  font-size: 2.4rem;
+}
+.education .schools .school .schoolInfo .course {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+.education .schools .school .schoolInfo .duration {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  padding: 6rem 0;
+  width: 100vw;
+}
+.contact h1 {
+  font-size: 3.2rem;
+}
+.contact hr {
+  margin-top: 2rem;
+  width: 15rem;
+  height: 0.3rem;
+  background-color: #A9B04C;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+}
+.contact form textarea,
+.contact form input {
+  margin: 0.5rem 0;
+  padding: 2rem 2rem;
+  width: 22rem;
+  height: 2rem;
+  border-radius: 8px;
+  font-size: 2rem;
+}
+@media (min-width: 300px) {
+  .contact form textarea,
+  .contact form input {
+    width: 25rem;
+  }
+}
+@media (min-width: 400px) {
+  .contact form textarea,
+  .contact form input {
+    width: 30rem;
+  }
+}
+@media (min-width: 600px) {
+  .contact form textarea,
+  .contact form input {
+    width: 40rem;
+  }
+}
+.contact form textarea {
+  height: 10rem;
+}
+.contact form .contactFormButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  font-size: 2rem;
+  padding: 1.2rem 1.6rem;
+  margin: 1.2rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  background-color: #000;
+  color: #FFF;
+  cursor: pointer;
+  border: solid;
+  border-color: #000;
+  border-width: 3px;
+}
+.contact form .contactFormButton:hover {
+  background-color: #FFF;
+  color: #000;
+}
+.contact form .contactFormButton svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.contact form address {
+  font-style: normal;
+  font-size: 2rem;
+}
+.contact form address a {
+  color: #5657A3;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.module.css.map */

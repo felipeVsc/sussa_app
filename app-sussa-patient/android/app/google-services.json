@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "844281697588",
+    "project_id": "sussa-app",
+    "storage_bucket": "sussa-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844281697588:android:b33dff5159ef9e84e54161",
+        "android_client_info": {
+          "package_name": "com.appsussapatient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844281697588-iir115dc56oe7quruc1o929ir826hetn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3uyUBMuuq7TDaJmN9VxwwJHP1qSr--L0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844281697588-iir115dc56oe7quruc1o929ir826hetn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844281697588:android:3809b7ebb67cc116e54161",
+        "android_client_info": {
+          "package_name": "com.google.firebase.quickstart.fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844281697588-iir115dc56oe7quruc1o929ir826hetn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3uyUBMuuq7TDaJmN9VxwwJHP1qSr--L0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844281697588-iir115dc56oe7quruc1o929ir826hetn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,86 @@
+.sussaHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 90%;
+  margin: 3rem auto;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 1000px) {
+  .sussaHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 4%;
+    left: 0;
+    top: 0;
+  }
+}
+.sussaHeader img {
+  width: 30rem;
+}
+.sussaHeader .textBlack {
+  color: #000;
+}
+.sussaHeader .textWhite {
+  color: #FFF;
+}
+.sussaHeader nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+@media (min-width: 360px) {
+  .sussaHeader nav {
+    width: 80%;
+  }
+}
+@media (min-width: 700px) {
+  .sussaHeader nav {
+    width: 60%;
+  }
+}
+@media (min-width: 1000px) {
+  .sussaHeader nav {
+    justify-content: flex-end;
+    width: 50%;
+  }
+}
+.sussaHeader nav .headerNavItem {
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 2px;
+  margin: 1rem 2rem;
+  transition: all 0.2s ease-in;
+}
+@media (min-width: 1000px) {
+  .sussaHeader nav .headerNavItem {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+.sussaHeader nav .headerNavItem svg {
+  fill: #FFF;
+  height: 2.4rem;
+}
+.sussaHeader nav .headerNavItem:hover {
+  border-bottom: 2px solid #FF9E9C;
+}
+.sussaHeader nav .headerNavItemActive {
+  border-bottom: 2px solid #FF9E9C;
+}/*# sourceMappingURL=style.module.css.map */
